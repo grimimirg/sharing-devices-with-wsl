@@ -68,7 +68,7 @@
     From the WSL window, type:
     
     ```
-    lsusb
+    usbipd
     ```
     
     to verify that the USB device is listed and can be interacted with using Linux tools.
@@ -80,3 +80,16 @@
     ```
     usbipd detach --busid <busid>
     ```
+
+## NOTE
+
+In case `usbipd` is not found, consider installing the following packages via `apt-get`:
+
+```
+
+linux-tools-6.6.87.1-microsoft-standard-WSL2
+linux-cloud-tools-6.6.87.1-microsoft-standard-WSL2
+linux-tools-standard-WSL2
+linux-cloud-tools-standard-WSL2
+    
+```
